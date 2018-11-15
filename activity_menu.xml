@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <Button
+        android:id="@+id/mapa"
+        android:layout_width="291dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="irAMenu"
+        android:text="@string/mapa"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/perdidos"
+        android:layout_width="292dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="irAAlertas"
+        android:text="@string/perros_perdidos_en_mi_area"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="@+id/mapa"
+        app:layout_constraintTop_toBottomOf="@+id/mapa"
+        tools:text="Perros perdidos en mi área" />
+
+    <Button
+        android:id="@+id/nueva"
+        android:layout_width="288dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="214dp"
+        android:layout_marginTop="213dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="irANueva"
+        android:text="@string/nueva"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mapa"
+        app:layout_constraintVertical_bias="0.894"
+        tools:text="Poner una alerta" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="218dp"
+        android:layout_height="324dp"
+        app:srcCompat="@drawable/corgi"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="252dp" />
+</android.support.constraint.ConstraintLayout>
